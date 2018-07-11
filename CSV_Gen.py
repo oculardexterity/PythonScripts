@@ -83,7 +83,8 @@ class CSV_Gen:
         
         self._value_transformers = {} # Obviously can set this directly; or not?
         self._field_names = field_names
-        self.file_path = file_path
+        if file_path:
+            self.file_path = file_path
         
 
         self._selected_fields = [] # initalise this as blank for easy iffing..
